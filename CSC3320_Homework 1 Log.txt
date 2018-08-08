@@ -1,0 +1,45 @@
+Script started on Sat 10 Sep 2016 05:34:19 PM EDT
+]0;GSUAD\swyckoff1@snowball:~[?1034h[GSUAD\swyckoff1@snowball ~]$ cat hmwk1_swyckoff1.c
+/*
+ * hmwk1_swyckoff.c
+ *
+ * Stephanie Wyckoff
+ * Account: swyckoff1
+ * CSc 3320
+ * Program #1
+ * Due date: 9/13/16
+ *
+ * Discription: This program was converted to C language from Java.  Its purpose is to find the sum of the integers 1-5, and print out the sum
+ *  
+ * Input: There are no inputs to the program.
+ *
+ * Output: The program outputs "The sum of 1 to 5 is " followed by the computed command and a new line character (\n).
+ *
+ */
+
+
+#include <stdio.h>
+
+  int  main() {
+    // Find the sum 1..5
+    int sum = 0;
+    int i;
+
+    for (i=1; i<=5; i++) {
+      sum = sum + i; 
+    }
+
+    printf("The sum of 1 to 5 is %d\n", sum);
+    
+    return 0;
+  }
+
+
+GSUAD\swyckoff1@snowball:~[GSUAD\swyckoff1@snowball ~]$ gcc hmwrk1_swyckoff1.c -o hmwk1_swyckoff1
+GSUAD\swyckoff1@snowball:~[GSUAD\swyckoff1@snowball ~]$ ./hmwk1_swyckoff1
+The sum of 1 to 5 is 15
+GSUAD\swyckoff1@snowball:~[GSUAD\swyckoff1@snowball ~]$ mail -s "homework 1" sakkineni1@student.gsu.edu < hmwk1_swyckoff1.c
+GSUAD\swyckoff1@snowball:~[GSUAD\swyckoff1@snowball ~]$ exit
+exit
+
+Script done on Sat 10 Sep 2016 05:38:25 PM EDT
